@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dan Paulo Salandanan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dan Paulo Salandanan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certifications"  onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./image/profile.jpg" alt="profile picture" class="pic1">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Dan</h1>
+            <p class="section__text__p2">Aspiring Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('file/DAN-SALANDANANCV.pdf', '_blank')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='https://exampledraft.my.canva.site/danpaulo-salandanan-portfolio'">Portfolio</button>
+            </div>
+            <div id="socials-container">
+                <img src="./image/linkedin.png" alt="linkedIn icon" class="icon" onclick="location.href='https://linkedin.com/in/dan-salandanan'">
+                <img src="./image/github.png" alt="linkedIn icon" class="icon" onclick="location.href='https://github.com/Grig0riRasputin'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./image/profile3.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img src="./image/medal.png" alt="experience icon" class="icon medal">
+                        <h3>Experience</h3>
+                        <p>Oct 2023 - April 2024 </p>
+                        <p>Adventus IT Services.Co</p> 
+                        <p>Internship</p>
+                        <p>IT Support</p>
+                    </div>
+                    <div class="details-containers">
+                        <img src="./image/education.png" alt="education" class="icon education">
+                        <h3>Education</h3>
+                        <p class="school">Technological University of the Philippines</p> 
+                        <p>Bachelor Of Engineering Technology Major
+                            In Computer Engineering Technology <br>2020-2024</p>
+                    <p class="school">STI College Caloocan</p> <p>STEM <br> 2018-2020</p> 
+                </div>    
+                </div>
+                <div class="text-container">
+                    <p class="intro">
+                        A highly motivated Computer Engineering graduate with expertise in HTML, CSS, JavaScript, Node.js, and Python,
+                        skilled in developing robust web applications and delivering client-focused solutions. 
+                        Adept at managing multiple projects simultaneously and collaborating effectively within team environments. Committed to leveraging technical knowledge to exceed expectations and achieve business goals. Prepared to contribute innovative ideas and drive success in fast-paced, tech-driven environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./image/arrow.png" alt="arrow" class="icon arrow" onclick="document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' })">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-detail-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                       <img src="./image/html.png" alt="html icon" class="icon skill-icon">
+                       <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                       </div>
+                    </article>
+                     <div class="article-container">
+                    <article>
+                       <img src="./image/css-3.png" alt="html icon" class="icon skill-icon">
+                       <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                       </div>
+                    </article>
+                    <div class="article-container">
+                        <article>
+                           <img src="./image/java-script.png" alt="html icon" class="icon skill-icon">
+                           <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                           </div>
+                    </article>
+                    <div class="article-container">
+                        <article>
+                           <img src="./image/library.png" alt="html icon" class="icon skill-icon">
+                           <div>
+                            <h3>React.JS</h3>
+                            <p>Basic</p>
+                           </div>
+                    </article>
+                </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="details-containers">
+            <h2 class="skills-sub-title">Backend Development</h2>
+        <div class="article-container">
+            <article>
+               <img src="./image/developer.png" alt="html icon" class="icon skill-icon">
+               <div>
+                <h3>Node.JS</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+             <div class="article-container">
+            <article>
+               <img src="./image/python.png" alt="html icon" class="icon skill-icon">
+               <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+            <div class="article-container">
+                <article>
+                   <img src="./image/api.png" alt="html icon" class="icon skill-icon">
+                   <div>
+                    <h3>API</h3>
+                    <p>Basic</p>
+                   </div>
+            </article>
+            <div class="article-container">
+                <article>
+                   <img src="./image/git.png" alt="html icon" class="icon skill-icon">
+                   <div>
+                    <h3>Git</h3>
+                    <p>Basic</p>
+                   </div>
+            </article>
+        </div>    
+        </div>
+    </div>
+</div>
+<img src="./image/arrow.png" alt="arrow" class="icon arrow" onclick="document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })">
+
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-detail-container">
+            <div class="details-containers">
+                <img src="./image/project1.jpg" alt="Thesis Project" class="project-pic1">
+                <h2 class="project-title">Thesis Project</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('file/DEVELOPMENT OF BLUETOOTH HEADGEAR MASSAGER CONTROLLED THROUGH APPLICATION.pdf','_blank')">Documents</button>
+            </div> 
+            </div>
+            <div class="details-containers">
+                <img src="./image/project2.png" alt="Tindog" class="project-pic">
+                <h2 class="project-title">Modified Bootstrap</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='https://grig0rirasputin.github.io/Tindog/'">Git Hub</button>
+            </div> 
+            </div>
+            <div class="details-containers">
+                <img src="./image/project3.png" alt="Maharlika Ecommerce" class="project-pic">
+                <h2 class="project-title">Maharlika Ecommerce</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='https://github.com/Grig0riRasputin/Maharlika-Ecommerce'">Git Hub</button>
+            </div> 
+            </div>
+            <div class="details-containers">
+                <img src="./image/project4.png" alt="todo list app" class="project-pic">
+                <h2 class="project-title">TO-DO LIST APP</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='https://grig0rirasputin.github.io/TO-DO-LIST-APP/'">Git Hub</button>
+            </div> 
+            </div>     
+        </div> 
+        <img src="./image/arrow.png" alt="arrow" class="icon arrow" onclick="document.querySelector('#certifications').scrollIntoView({ behavior: 'smooth' })">
+    </section>
+
+    <section id="certifications">
+        <p class="section__text__p1">Scout My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="certification-details">
+            <div class="certification-items">
+                <img src="./image/certificate1.png" alt="udemy certificate" class="certificate-pic">
+                <h2 class="certificatte-title">The Complete 2024 <br>Web Development Bootcamp</h2>
+                <div>
+                <button class="btn btn-color-1" onclick="window.open('file/udemy-certificate.pdf','_blank')">View</button>
+                </div>
+            </div>
+            <div class="certification-items">
+                <img src="./image/certificate2.png" alt="Python Certificate" class="certificate-pic">
+                <h2 class="certificatte-title">Python ProgrammIng Fundamentals</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('file/Salandanan-Python.pdf','_blank')">View</button>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./image/arrow.png" alt="arrow" class="icon arrow" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+            <div class="contact-details">
+                <div class="contact-item">
+                <img src="./image/email.png" alt="email icon" class="icon email-icon">
+                <p>
+                    <a href="mailto:salandanandanpaulo@gmail.com">salandanandanpaulo</a>
+                </p>
+            </div >
+            <div class="contact-item">
+                <img src="./image/telephone.png" alt="telephone icon" class="icon telephone-icon">
+                <p class="number">
+                    +639100462971
+                </p>
+            </div>
+            <div class="contact-item">
+                <img src="./image/linkedin.png" alt="linkedIn icon" class="icon linkedIn-icon">
+                <p>
+                    <a href="https://www.linkedin.com/in/dan-salandanan/">https://www.linkedin.com/in/dan-salandanan/</a>
+                </p>
+            </div>
+            <div class="contact-item">
+                <img src="./image/facebook-app-symbol.png" alt="facebook icon" class="icon facebook-icon">
+                <p>
+                    <a href="https://www.facebook.com/dan.salandanan1147">https://www.facebook.com/dan-salandanan1147</a>
+                </p>
+            </div>
+        </div>
+        <nav id="below-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <footer>
+            <p>Copyright © 2024 Dan Paulo. All Rights Reserved</p>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
