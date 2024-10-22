@@ -1,0 +1,155 @@
+@media screen and (max-width: 1400px){
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container{
+        flex-wrap: wrap;   
+    }
+    #contact, #projects{
+        height: fit-content;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #skills,
+    .skills-detail-container{
+        margin-top: 2rem;
+    }
+    #profile,
+    .section-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, 
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #contact,footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 50vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer{
+        height: 10px
+    }
+    .about-containers, 
+    .contact-details, 
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-item{
+        margin: 0;
+    }
+    .contact-item p, 
+    .nav-links li a{
+        font-size: 1rem;
+    }
+    .skills-sub-title{
+        font-size: 1.5rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        justify-content: center;
+    }
+    .section__text_p2{
+        font-size:1.25rem
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: start;
+    }
+    .projects-detail-container{
+        flex-direction: column;
+    }
+    .project-pic{
+        width: 90%;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+
+    }
+        .contact-item p{
+        display: flex;
+        align-items: center;    
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .facebook-icon, 
+    .linkedIn-icon, 
+    .telephone-icon, 
+    .email-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    .certification-details, .certification-items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:1rem;
+        margin: 0;
+    }
+    .certificate-pic{
+        width: 35vh;
+    }
+    .menu-links a, .menu-links{
+        background: white;
+        color:#000000
+    }
+    footer{
+        padding: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+}   
+
+
+
